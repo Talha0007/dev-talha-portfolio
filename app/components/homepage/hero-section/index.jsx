@@ -1,5 +1,6 @@
 // @flow strict
 
+import { motion } from "framer-motion";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,7 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import ComputersCanvas from "../../canvas/Computers";
 
 function HeroSection() {
   return (
@@ -206,6 +208,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+      <ComputersCanvas />
     </section>
   );
 }
